@@ -1,0 +1,4 @@
+/*
+Empty for now.
+Will add firebase code later on
+*/
