@@ -1,0 +1,10 @@
+
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;      /*stick at the top of the page while scrolling*/
+    top: 0;
+    z-index: 100;
+}
