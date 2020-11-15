@@ -8,3 +8,23 @@
     top: 0;
     z-index: 100;
 }
+
+.header__logo{           /*Refers to the image*/
+    width: 100px;
+    object-fit: contain;         /*keep aspect ratio*/
+    margin: 0 20px;
+    margin-top: 18px;
+}
+
+.header__search{
+    display: flex;        /*stretches to match the size of the searchIcon*/
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.header__searchIcon{
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042;
+}
