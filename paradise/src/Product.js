@@ -6,7 +6,7 @@ function Product() {
         <div className = "product">
             
             <div className = "product__info">
-                <p>The Wack Inflatable Tube Man</p>
+                <p>The Wacky Inflatable Tube Man</p>
                 <p className = "product__price">
                     <small>$</small>
                     <strong>4.20</strong>
