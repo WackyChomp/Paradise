@@ -29,6 +29,10 @@
     margin-top: 5px;
 }
 
+.product__rating{
+    display: flex;            /*converts into a row from column*/
+}
+
 .product > button{          /*adding color to button*/
     background: #f0c14b;
     border: 1px solid;

@@ -11,7 +11,12 @@ function Home() {
                 alt = ""/>
 
                 <div className = "home__row">
-                    <Product />
+                    <Product 
+                    title = "Not so Wacky Inflatable Tube Man"
+                    price = {0.50}
+                    image = "https://images-na.ssl-images-amazon.com/images/I/714ixvtUpZL._AC_SL1500_.jpg"
+                    rating = {5}
+                    />
                     <Product />
                 </div>
 
