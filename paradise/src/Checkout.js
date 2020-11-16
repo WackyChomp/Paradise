@@ -13,6 +13,13 @@ function Checkout() {
                     <h2 className = "checkout__title">
                         This is your shopping basket
                     </h2>
+
+                    {/* BasketItem */}
+                    {/* BasketItem */}
+                    {/* BasketItem */}
+                    {/* BasketItem */}
+                    {/* BasketItem */}
+                    
                 </div>
             </div>
 
