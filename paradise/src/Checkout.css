@@ -1,0 +1,11 @@
+
+.checkout{
+    display: flex;         /*makes the <h2> in checkout__right next to ad in checkout__left*/
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+}
+.checkout__ad{
+    width: 100%;
+    margin-bottom: 10px;
+}
