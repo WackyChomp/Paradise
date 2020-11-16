@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 import Header from './Header';
 import Home from './Home';
+import Checkout from './Checkout'
 import { BrowserRouter as Router, Switch, Route }
 from "react-router-dom"
 
@@ -11,10 +12,11 @@ function App() {
     <Router>
     <div className="app">
       <h1>Change da world my final message, Goodbye :O</h1>
+      <Header />
+
       <Switch>
         <Route path = "/checkout">
-          <header />
-
+            <Checkout />
         </Route>
 
         <Route path = "/">
@@ -24,7 +26,7 @@ function App() {
       </Switch>
     </div>
     </Router>
-
+      //<Route path = "/">     this is the default route and should be at the bottom
   );
 }
 
