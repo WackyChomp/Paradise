@@ -4,8 +4,7 @@ import Product from './Product';
 
 function Home() {
     return (
-        <div classname = "home">
-            <h1>Change da world my final message, Goodbye :O</h1>
+        <div className = "home">
             <div className = "home__container">
                 <img className = "home__image"
                 src = "https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428584220_.jpg" 

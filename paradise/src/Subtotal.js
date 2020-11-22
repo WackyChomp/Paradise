@@ -1,10 +1,10 @@
 import React from 'react';
-import './Subtotal.css';
+import "./Subtotal.css";
 import CurrencyFormat from "react-currency-format";
 
 function Subtotal() {
     return (
-        <div classname = 'subtotal'>
+        <div className = 'subtotal'>
             <CurrencyFormat
                 renderText = { (value) => (
                     <>
@@ -17,7 +17,7 @@ function Subtotal() {
                     </>
                 )}
 
-                decimalScale = {2}
+                decimalScale = {2}       //Decimal places
                 value = {0}
                 displayType = {"text"}
                 thousandSeparator = {true}
@@ -26,7 +26,7 @@ function Subtotal() {
 
             <button>Proceed to Checkout</button>
         </div>
-    )
+    );
 }
 
 export default Subtotal
