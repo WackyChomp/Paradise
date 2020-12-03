@@ -4,6 +4,10 @@ export const initialState = {
     user: null,
 };
 
+//selector
+export const getBasketTotal = (basket) =>
+    basket?.reduce((amount, item) => item.price + amount, 0);        /*reducer maps through the basket and tallies up the total (fancy for loop)*/
+
 const reducer = (state, action) => {     /*the reducer listens for dispatch*/
     
     switch(action.type){
