@@ -11,9 +11,7 @@ function Checkout() {
                 alt = ""/>
 
                 <div>
-                    <h2 className = "checkout__title">
-                        This is your shopping basket
-                    </h2>
+                    <h2 className = "checkout__title">This is your shopping basket</h2>
 
                     {/* BasketItem */}
                     {/* BasketItem */}
