@@ -15,3 +15,34 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+.login__container{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;          /*curving the corners*/
+    border: 1px solid magenta;
+    padding: 20px;
+}
+
+.login__container > h1 {        /*targeting h1*/
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.login__container > form > h5{      /*targeting h5*/
+    margin-bottom: 5px;
+}
+
+.login__container > form > input{      /*targeting input (enlarging the input box*/
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+
+.login__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
