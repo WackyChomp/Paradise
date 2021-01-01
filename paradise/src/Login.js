@@ -3,6 +3,18 @@ import './Login.css'
 import { Link } from "react-router-dom";
 
 function Login() {
+
+    const [email, setEmail] = useState('');      /*use empty string instead of null*/
+    const [password, setPassword] = useState('');
+    
+    const signIn = e => {
+        e.preventDefault();     /*prevents the page from refreshing in react. Use firebase*/
+    }
+
+    const register = e => {
+        e.preventDefault();
+    }
+
     return (
         <div className = "login">
             <Link to = '/'>
@@ -17,10 +29,14 @@ function Login() {
                 
                 <form>
                     <h5>E-mail</h5>
-                    <input type = 'text' />
+                    <input type = 'text' value = {email} onChange = {e => setEmail(e.target.value)} />
                     <h5>Password</h5>
-                    <input type = 'password' />
-                    <button className = 'login__signInButton'>Sign In</button>
+                    <input type = 'password' value = {password} onChange = {e => setPassword(e.target.value)} />
+                    
+                    <button 
+                    type = 'submit' 
+                    onClick = {signIn}
+                    className = 'login__signInButton'>Sign In</button>
                 </form>
                 
                 <p>
@@ -29,7 +45,9 @@ function Login() {
                     our Cookies Notice and our Interest-Based Ads Notice.
                 </p>
 
-                <button className = 'login__registerButton'>Create your Paradise Account</button>
+                <button 
+                onClick = {register}
+                className = 'login__registerButton'>Create your Paradise Account</button>
             </div>
         
         </div>
