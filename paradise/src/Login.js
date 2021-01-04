@@ -1,13 +1,14 @@
 import React from 'react'
 import './Login.css'
-import { Link } from "react-router-dom";
+import { Link , useHistory } from "react-router-dom";
 import { auth } from "./firebase";
 
 function Login() {
 
     const [email, setEmail] = useState('');      /*use empty string instead of null*/
     const [password, setPassword] = useState('');
-    
+    const history = useHistory();
+
     const signIn = e => {
         e.preventDefault();     /*prevents the page from refreshing in react. Use firebase*/
     }
@@ -18,6 +19,9 @@ function Login() {
             .createUserWithEmailAndPassword(email, password)
             .then((auth) => {      /*if the authentication was good, this gets triggered*/
                 console.log(auth);
+                if (auth){
+                    history.push('/')          /*redirects user to home page*/
+                }
             })
             .catch(error => alert(error.message))
 
