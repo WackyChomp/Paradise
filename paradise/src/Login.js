@@ -1,6 +1,7 @@
 import React from 'react'
 import './Login.css'
 import { Link } from "react-router-dom";
+import { auth } from "./firebase";
 
 function Login() {
 
@@ -13,6 +14,13 @@ function Login() {
 
     const register = e => {
         e.preventDefault();
+        auth
+            .createUserWithEmailAndPassword(email, password)
+            .then((auth) => {      /*if the authentication was good, this gets triggered*/
+                console.log(auth);
+            })
+            .catch(error => alert(error.message))
+
     }
 
     return (
