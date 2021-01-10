@@ -18,7 +18,6 @@ function Login() {
         auth
             .createUserWithEmailAndPassword(email, password)
             .then((auth) => {      /*if the authentication was good, this gets triggered*/
-                console.log(auth);
                 if (auth){
                     history.push('/')          /*redirects user to home page*/
                 }
