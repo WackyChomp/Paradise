@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Login.css'
 import { Link , useHistory } from "react-router-dom";
 import { auth } from "./firebase";
@@ -11,6 +11,12 @@ function Login() {
 
     const signIn = e => {
         e.preventDefault();     /*prevents the page from refreshing in react. Use firebase*/
+        auth
+            .signInWithEmailAndPassword(email, password)
+            .auth(auth => {
+                history.push('/')
+            })
+            .catch(error = alert(error.message))
     }
 
     const register = e => {
