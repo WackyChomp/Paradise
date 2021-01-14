@@ -13,7 +13,7 @@ function Login() {
         e.preventDefault();     /*prevents the page from refreshing in react. Use firebase*/
         auth
             .signInWithEmailAndPassword(email, password)
-            .auth(auth => {
+            .then(auth => {
                 history.push('/')
             })
             .catch(error = alert(error.message))
