@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './App.css';
 import Header from './Header';
 import Home from './Home';
@@ -9,7 +9,7 @@ import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 
 function App() {
-
+  const [{}, dispatch] = useStateValue();
   useEffect(() => {     /*only runs when app component loads (if statement for react)*/
 
     auth.onAuthStateChanged(authUser => {

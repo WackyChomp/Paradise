@@ -35,6 +35,12 @@ const reducer = (state, action) => {     /*the reducer listens for dispatch*/
                 ...state,
                 basket: newBasket
             }
+        
+        case "SET_USER":
+            return {
+                ...state,
+                user: action.user
+            }
 
         default:
             return state;
